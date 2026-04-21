@@ -1,0 +1,37 @@
+[
+  {
+    "poet": "Yunus Emre",
+    "country": "Türkiye",
+    "lines": [
+      "Ben gelmedim dava için,",
+      "Benim işim sevi için.",
+      "Dostun evi gönüllerdir,",
+      "Gönüller yapmaya geldim."
+    ],
+    "theme": "Universal Love"
+  },
+  {
+    "poet": "Maya Angelou",
+    "country": "USA",
+    "lines": [
+      "In minor ways we differ,",
+      "in major we're the same.",
+      "I note the obvious differences",
+      "between each sort and type,",
+      "but we are more alike, my friends,",
+      "than we are unalike."
+    ],
+    "theme": "Unity"
+  },
+  {
+    "poet": "Saadi Shirazi",
+    "country": "Iran",
+    "lines": [
+      "Human beings are members of a whole,",
+      "In creation of one essence and soul.",
+      "If one member is afflicted with pain,",
+      "Other members uneasy will remain."
+    ],
+    "theme": "Interconnectedness"
+  }
+]
