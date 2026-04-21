@@ -2,7 +2,7 @@
 
 > **"Aşk gelicek cümle eksikler biter."** - *Yunus Emre*
 
-Bu repository, insanlığın binlerce yıldır kendi elleriyle attığı o en sert düğümü -ırkçılık ve ayrımcılığı- çözmek için değil, o düğümün aslında hiç var olmaması gerektiğini hatırlatmak için kuruldu. Bizim için dünya, sınırlardan ve renklerden ibaret bir harita değil; ruhların birleştiği devasa bir **Aşk Meydanı**dır.
+Bu repository, insanlığın binlerce yıldır kendi elleriyle attığı o en sert düğümü —ırkçılık ve ayrımcılığı— çözmek için değil, o düğümün aslında hiç var olmaması gerektiğini hatırlatmak için kuruldu. Bizim için dünya, sınırlardan ve renklerden ibaret bir harita değil; ruhların birleştiği devasa bir **Aşk Meydanı**dır.
 
 ---
 
@@ -36,18 +36,40 @@ Bu repo sadece yazı değil, bir eylem planıdır:
 
 ### 1. `Logic-of-Unity/` (Birliğin Mantığı)
 Irkçılığın temelinde yatan "ötekileştirme" dilini analiz eden ve şifalandıran algoritmalar.
-* **Bias-Detector:** Metinlerdeki gizli önyargıları tespit eder ve şiddet skoru hesaplar.
-* **Empathy-Generator:** Sert dilleri, sevgi diline dönüştüren ve "Gönül Önerileri" sunan bir model.
-* **Unity-Analyzer:** [YENİ] Metindeki birleştirici kelimeleri (Sevgi, Birlik, Paylaşım vb.) tespit ederek "Gönül Endeksi" oluşturur.
+* **`bias_detector.py`** — Metinlerdeki önyargıları tespit eder; şiddet skoru ve seviye raporu çıkarır.
+* **`empathy_generator.py`** — Sert dilleri sevgi diline dönüştürür; "Gönül Önerileri" sunar.
+* **`unity_analyzer.py`** — Metindeki birleştirici kelimeleri (Sevgi, Birlik, Paylaşım vb.) ölçerek **Gönül Endeksi** hesaplar.
+* **`gonul_terminali.py`** — ✨ Tüm araçları bir araya getiren renkli **CLI terminali**. Demo: `python Logic-of-Unity/gonul_terminali.py --hepsi "metin buraya"`
 
 ### 2. `The-Universal-Library/` (Evrensel Kütüphane)
-* **`antiracist-manifestos.md`:** Einstein'dan Baha'i yazılarına kadar genişletilmiş, barış ve eşitlik metinleri derlemesi.
-* **`poetic-justice.json`:** Japon Haikularından Afrika atasözlerine kadar uzanan, her dilden "insan" şiirleri.
+* **`antiracist-manifestos.md`** — MLK'dan Einstein'a, Yunus Emre'den Baha'i yazılarına geniş bir manifesto koleksiyonu.
+* **`poetic-justice.json`** — Japonya'dan Güney Afrika'ya, Anadolu'dan Amerika'ya dünya şiiri arşivi.
+* **`sessiz-kahramanlar.md`** — Tarihin ders kitaplarına giremeyen ama dünyayı değiştiren sıradan insanların hikayeleri.
+* **`tarihin-kirinyuzu.md`** — Sevginin ve insanlığın kazandığı tarihsel kırılma noktaları.
 
 ### 3. `Wisdom-Archive/` (Bilgelik Arşivi)
-Irkçılığa karşı durmuş ve sevginin gücünü kanıtlamış kadim ve modern bilgeler:
-* **Anadolu:** Yunus Emre, Mevlana, Hacı Bektaş-i Veli.
-* **Evrensel:** Nelson Mandela, Malcolm X, Mahatma Gandhi, Rosa Parks.
+Irk ayrımına karşı çıkmış, sevginin gücünü kanıtlamış kadim ve modern bilgeler:
+
+| Düşünür | Köken | Temel Kavram |
+|---|---|---|
+| Yunus Emre | 🇹🇷 Anadolu | Sevgi / Gönül |
+| Mevlana | 🇮🇷 Konya | Kapsayıcılık |
+| Hacı Bektaş-i Veli | 🇹🇷 Anadolu | 72 Milleti Bir Gör |
+| Nelson Mandela | 🇿🇦 G. Afrika | Uzlaşma / Ubuntu |
+| Malcolm X | 🇺🇸 ABD | Dönüşüm / Adalet |
+| Mahatma Gandhi | 🇮🇳 Hindistan | Satyagraha / Şiddetsizlik |
+| Rosa Parks | 🇺🇸 ABD | Sessiz Cesaret |
+| Desmond Tutu | 🇿🇦 G. Afrika | Ubuntu / Affetme |
+| José Martí | 🇨🇺 Küba | La Raza Humana |
+| Simone Weil | 🇫🇷 Fransa | Dikkat / Kök Salmak |
+
+### 4. `languages/` (Dünya Dilleri)
+"Seni seviyorum, biz biriz" — 13 dilde:
+
+`tr` • `en` • `ar` • `fr` • `es` • `de` • `sw` • `pt` • `ru` • `hi` • `zh` • `ja` • `yo`
+
+### 5. `stories/` (Hikâyeler)
+README'nin "Derdini Anlat" çağrısına cevap veren, gerçek insanlardan gerçek anlar. İlk hikâye içeride. Seninkini eklemek için bkz. `stories/README.md`.
 
 ---
 
@@ -58,15 +80,18 @@ Biz bu repoya katkı verenler olarak inanıyoruz ki:
 2.  **Renkler Tanrı'nın paletidir.** Bir rengi diğerinden üstün tutmak, sanatçıya hakarettir.
 3.  **Teknoloji birleştiricidir.** Kod satırlarımız arasına sadece mantık değil, vicdan da ekliyoruz.
 
+Daha fazlası için → [`MANIFESTO.md`](MANIFESTO.md)
+
 ---
 
 ## 🤝 Katkıda Bulunma Rehberi (Gönül Birliği)
 
-Bu projeye katkı yapmak için yazılımcı olmana gerek yok, **insan** olman yeterli:
+Bu projeye katkı yapmak için yazılımcı olmana gerek yok, **insan** olman yeterli. Nasıl başlayacağın için bkz. → [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
-* **Derdini Anlat:** Bir insanın renginden dolayı yaşadığı bir zorluğu ve senin ona nasıl "gönül kapısı" olduğunu anlat.
-* **Dilini Paylaş:** Kendi ana dilinde "Seni seviyorum kardeşiz" yazan bir dosya oluştur (`languages/tr.md`, `languages/en.md`, `languages/sw.md`...).
-* **Aşkı Tanımla:** Sence ırkçılığı bitirecek olan o "tek bir cümle" nedir? Onu `MANIFESTO.md` içerisine ekle.
+**Hızlı başlangıç:**
+* **Dilini Paylaş:** `languages/` klasörüne kendi dilinde bir dosya ekle.
+* **Derdini Anlat:** `stories/` klasörüne kişisel bir hikâye ekle.
+* **Aşkı Tanımla:** `MANIFESTO.md`'ye kendi cümlenle katkı yap.
 
 ---
 
