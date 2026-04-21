@@ -13,3 +13,13 @@ Bu kütüphane, insanlık tarihinin barış ve eşitlik adına attığı en büy
 
 ## 4. Yunus Emre - Yetmiş İki Millet
 *"Yaratılanı severiz, Yaradan'dan ötürü. Yetmiş iki millete bir göz ile bakmayan, halka müderris olsa hakka asidir."*
+
+## 5. Albert Einstein - "Irkçılık Beyaz Adamın Hastalığıdır" (1946)
+*"Birçok kişinin önünde ifade edildiğinde pek hoş karşılanmayacak olsa da, ırkçılık beyaz adamın hastalığıdır. Bu sessiz kalabileceğimiz bir konu değil. Vicdanım sustukça ruhum huzur bulmuyor."*
+
+## 6. Baha'i Yazıları - İnsanlığın Birliği
+*"İnsanlık alemi tek bir ağaca benzer, milletler ise o ağacın dallarıdır; kişiler ise meyveleri ve yapraklarıdır. Bir dalın diğerini küçümsemesi, bir meyvenin diğerine haset etmesi mümkün müdür? Hepsi aynı kökten beslenir."*
+
+---
+> [!NOTE]
+> Bu kütüphane sürekli güncellenmektedir. Sizin için "birleştirici" olan her cümleyi buraya eklemekten çekinmeyin.

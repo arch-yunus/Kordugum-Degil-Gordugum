@@ -35,16 +35,19 @@ Bu projenin kalbi, yüzyıllardır aynı şeyi söyleyen ama farklı dillerde ko
 Bu repo sadece yazı değil, bir eylem planıdır:
 
 ### 1. `Logic-of-Unity/` (Birliğin Mantığı)
-Irkçılığın temelinde yatan "ötekileştirme" dilini analiz eden algoritmalar.
-* **Bias-Detector:** Metinlerdeki gizli önyargıları tespit eder.
-* **Empathy-Generator:** Sert dilleri, sevgi diline dönüştüren bir model taslağı.
+Irkçılığın temelinde yatan "ötekileştirme" dilini analiz eden ve şifalandıran algoritmalar.
+* **Bias-Detector:** Metinlerdeki gizli önyargıları tespit eder ve şiddet skoru hesaplar.
+* **Empathy-Generator:** Sert dilleri, sevgi diline dönüştüren ve "Gönül Önerileri" sunan bir model.
+* **Unity-Analyzer:** [YENİ] Metindeki birleştirici kelimeleri (Sevgi, Birlik, Paylaşım vb.) tespit ederek "Gönül Endeksi" oluşturur.
 
 ### 2. `The-Universal-Library/` (Evrensel Kütüphane)
-* **`antiracist-manifestos.md`:** Tarih boyunca barış için yazılmış en güçlü metinlerin derlemesi.
-* **`poetic-justice.json`:** Her dilden, her renkten şairin "insan" üzerine yazdığı mısralar.
+* **`antiracist-manifestos.md`:** Einstein'dan Baha'i yazılarına kadar genişletilmiş, barış ve eşitlik metinleri derlemesi.
+* **`poetic-justice.json`:** Japon Haikularından Afrika atasözlerine kadar uzanan, her dilden "insan" şiirleri.
 
 ### 3. `Wisdom-Archive/` (Bilgelik Arşivi)
-* Irkçılığa karşı durmuş tarihi şahsiyetlerin (Nelson Mandela, Malcolm X, Mevlana vb.) stratejileri ve hayat felsefeleri.
+Irkçılığa karşı durmuş ve sevginin gücünü kanıtlamış kadim ve modern bilgeler:
+* **Anadolu:** Yunus Emre, Mevlana, Hacı Bektaş-i Veli.
+* **Evrensel:** Nelson Mandela, Malcolm X, Mahatma Gandhi, Rosa Parks.
 
 ---
 

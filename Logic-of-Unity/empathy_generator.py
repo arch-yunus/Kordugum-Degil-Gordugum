@@ -1,27 +1,45 @@
+import re
+
 def generate_empathy(text):
     """
-    Sert veya ötekileştirici dili, kapsayıcı ve empatik bir dile çevirme denemesi.
+    Sert dili empatik ve birleştirici bir dile dönüştüren araç.
+    Eklerin (suffix) korunması için basit regex eşleşmeleri kullanır.
     """
-    replacements = {
-        "onlar": "kardeşlerimiz",
-        "barbar": "kültürel farklılıkları olan değerler",
-        "yabancı": "misafir/yeni komşu",
-        "nefret ediyorum": "henüz anlamakta zorlanıyorum",
-        "defolun": "birlikte yaşamayı öğrenmeliyiz"
+    # Dönüşüm haritası (Kök bazlı)
+    transformations = {
+        r"\bonlar(ı|a|da|dan|la)?\b": r"kardeşlerimiz\1",
+        r"\bbarbar(lar|ın|a|ı)?\b": r"kültür elçileri\1",
+        r"\byabancı(lar|ın|a|ı)?\b": r"misafir\1",
+        r"\bnefret ediyorum\b": "henüz anlamakta zorlanıyorum",
+        r"\bdefol(un)?\b": "birlikte yaşamayı öğrenmeliyiz"
     }
     
-    words = text.lower().split()
-    transformed_text = []
-    
-    for word in words:
-        transformed_word = replacements.get(word, word)
-        transformed_text.append(transformed_word)
+    result = text.lower()
+    for pattern, replacement in transformations.items():
+        result = re.sub(pattern, replacement, result, flags=re.IGNORECASE)
         
-    return " ".join(transformed_text).capitalize()
+    # Uyum Önerisi (Harmony Suggestion)
+    suggestions = [
+        "Farklılıklar bizi zayıflatmaz, derinleştirir.",
+        "Onun yerinde senin olduğunu hayal etmeyi dene.",
+        "Sevgi, her türlü karanlığı dağıtan tek ışıktır."
+    ]
+    
+    import random
+    return {
+        "transformed": result.capitalize(),
+        "harmony_tip": random.choice(suggestions)
+    }
 
 if __name__ == "__main__":
-    toxic_input = "Biz onlardan nefret ediyorum"
-    empathetic_output = generate_empathy(toxic_input)
+    toxic_inputs = [
+        "Biz onlardan nefret ediyorum.",
+        "Barbarlar buraya gelmemeli.",
+        "Yabancıları istemiyoruz."
+    ]
     
-    print(f"Orijinal: {toxic_input}")
-    print(f"Empatik Dönüşüm: {empathetic_output}")
+    for inp in toxic_inputs:
+        res = generate_empathy(inp)
+        print(f"Orijinal: {inp}")
+        print(f"Empatik: {res['transformed']}")
+        print(f"Gönül Esintisi: {res['harmony_tip']}\n")

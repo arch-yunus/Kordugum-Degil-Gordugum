@@ -33,5 +33,24 @@
       "Other members uneasy will remain."
     ],
     "theme": "Interconnectedness"
+  },
+  {
+    "poet": "Matsuo Bashō",
+    "country": "Japan",
+    "lines": [
+      "The temple bell stops,",
+      "but the sound keeps coming",
+      "out of the flowers."
+    ],
+    "theme": "Invisible Oneness"
+  },
+  {
+    "poet": "Ubuntu Proverb",
+    "country": "South Africa",
+    "lines": [
+      "I am because we are.",
+      "A person is a person through other people."
+    ],
+    "theme": "Shared Humanity"
   }
 ]
